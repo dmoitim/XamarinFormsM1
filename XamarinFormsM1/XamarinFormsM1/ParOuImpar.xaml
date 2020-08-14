@@ -7,12 +7,15 @@
             <Label Text="Determina se um número é par ou ímpar."
                    VerticalOptions="CenterAndExpand" 
                     HorizontalOptions="CenterAndExpand" />
-            <Entry Keyboard="Numeric" Placeholder="Informe um número"
+            <Entry x:Name="etValor" Keyboard="Numeric" Placeholder="Informe um número"
                    VerticalOptions="CenterAndExpand"
                    HorizontalOptions="CenterAndExpand"/>
-            <Button Text="Executar"
+            <Button x:Name="btExecutar" Text="Executar"
                     VerticalOptions="CenterAndExpand"
-                    HorizontalOptions="CenterAndExpand"/>
+                    HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="lbResp"
+                   VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

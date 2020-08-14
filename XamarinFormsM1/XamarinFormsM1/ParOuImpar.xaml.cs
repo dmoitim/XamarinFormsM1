@@ -15,6 +15,24 @@ namespace XamarinFormsM1
         public ParOuImpar()
         {
             InitializeComponent();
+            btExecutar.Clicked += BtExecutar_Clicked;
+        }
+
+        private void BtExecutar_Clicked(object sender, EventArgs e)
+        {
+            int n = Convert.ToInt32(etValor.Text);
+
+            String resp = "O número " + etValor.Text + " é ";
+
+            if (n % 2 == 0)
+            {
+                resp += "par.";
+            } else
+            {
+                resp += "ímpar.";
+            }
+
+            lbResp.Text = resp;
         }
     }
 }
