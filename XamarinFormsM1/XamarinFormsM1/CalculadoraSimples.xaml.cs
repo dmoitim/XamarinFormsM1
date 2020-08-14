@@ -16,5 +16,33 @@ namespace XamarinFormsM1
         {
             InitializeComponent();
         }
+
+        private void Calcular(object sender, EventArgs e)
+        {
+            double a = 0, b = 0, t = 0;
+            
+            a = Convert.ToDouble(etValorA.Text);
+            b = Convert.ToDouble(etValorB.Text);
+
+            Button bt = (Button)sender;
+            
+            if (bt.Text == "+")
+            {
+                t = a + b;
+            } else if (bt.Text == "-")
+            {
+                t = a - b;
+            }
+            else if (bt.Text == "*")
+            {
+                t = a * b;
+            }
+            else if (bt.Text == "/")
+            {
+                t = a / b;
+            }
+
+            lbResp.Text = t.ToString();
+        }
     }
 }

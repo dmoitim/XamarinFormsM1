@@ -14,10 +14,10 @@
             <Entry x:Name="etValorB" Keyboard="Numeric"
                    Placeholder="Informe um número" />
             <StackLayout Orientation="Horizontal">
-                <Button Text="+" />
-                <Button Text="-" />
-                <Button Text="*" />
-                <Button Text="/" />
+                <Button Text="+" Clicked="Calcular" />
+                <Button Text="-" Clicked="Calcular" />
+                <Button Text="*" Clicked="Calcular" />
+                <Button Text="/" Clicked="Calcular" />
             </StackLayout>
             <Label x:Name="lbResp" />
         </StackLayout>
