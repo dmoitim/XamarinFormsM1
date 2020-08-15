@@ -10,7 +10,7 @@ namespace XamarinFormsM1
         {
             InitializeComponent();
 
-            MainPage = new CalculadoraSimples();
+            MainPage = new LayoutGrid();
         }
 
         protected override void OnStart()
