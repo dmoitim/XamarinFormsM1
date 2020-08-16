@@ -38,7 +38,7 @@
 
             <Button Text="/" BackgroundColor="Orange" TextColor="White"
                     FontSize="36" BorderRadius="0" Grid.Column="3"
-                    Grid.Row="1" Clicked="OnClear" />
+                    Grid.Row="1" Clicked="OnSelectOperator" />
 
             <Button Text="4" BackgroundColor="White" TextColor="Black"
                     FontSize="36" BorderRadius="0" Grid.Column="0"
@@ -54,7 +54,7 @@
 
             <Button Text="x" BackgroundColor="Orange" TextColor="White"
                     FontSize="36" BorderRadius="0" Grid.Column="3"
-                    Grid.Row="2" Clicked="OnClear" />
+                    Grid.Row="2" Clicked="OnSelectOperator" />
 
             <Button Text="1" BackgroundColor="White" TextColor="Black"
                     FontSize="36" BorderRadius="0" Grid.Column="0"
@@ -70,7 +70,7 @@
 
             <Button Text="-" BackgroundColor="Orange" TextColor="White"
                     FontSize="36" BorderRadius="0" Grid.Column="3"
-                    Grid.Row="3" Clicked="OnClear" />
+                    Grid.Row="3" Clicked="OnSelectOperator" />
 
             <Button Text="0" BackgroundColor="White" TextColor="Black"
                     FontSize="36" BorderRadius="0" Grid.ColumnSpan="3"
@@ -78,7 +78,7 @@
 
             <Button Text="+" BackgroundColor="Orange" TextColor="White"
                     FontSize="36" BorderRadius="0" Grid.Column="3"
-                    Grid.Row="4" Clicked="OnClear" />
+                    Grid.Row="4" Clicked="OnSelectOperator" />
 
             <Button Text="C" BackgroundColor="Gray" TextColor="White"
                     FontSize="36" BorderRadius="0" Grid.Column="0"
@@ -86,7 +86,7 @@
 
             <Button Text="=" BackgroundColor="Orange" TextColor="White"
                     FontSize="36" BorderRadius="0" Grid.ColumnSpan="3"
-                    Grid.Row="5" Clicked="OnClear" Grid.Column="1" />
+                    Grid.Row="5" Clicked="OnCalculate" Grid.Column="1" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>

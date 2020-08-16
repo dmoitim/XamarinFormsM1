@@ -53,6 +53,46 @@ namespace XamarinFormsM1
             }
         }
 
+        void OnSelectOperator(object sender, EventArgs e)
+        {
+            currentState = -2;
+            Button button = (Button)sender;
+            string pressed = button.Text;
+            mathOperator = pressed;
+        }
+
+        void OnCalculate(object sender, EventArgs e)
+        {
+            if (currentState == 2)
+            {
+                double result = 0;
+
+                if (mathOperator == "+")
+                {
+                    result = firstNumber + secondNumber;
+                }
+
+                if (mathOperator == "-")
+                {
+                    result = firstNumber - secondNumber;
+                }
+
+                if (mathOperator == "x")
+                {
+                    result = firstNumber * secondNumber;
+                }
+
+                if (mathOperator == "/")
+                {
+                    result = firstNumber / secondNumber;
+                }
+
+                lbResultado.Text = result.ToString("N0");
+                firstNumber = result;
+                currentState = -1;
+            }
+        }
+
         void OnClear(object sender, EventArgs e)
         {
             firstNumber = 0;
